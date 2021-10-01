@@ -375,4 +375,4 @@ PAYLOAD=$(cat <<EOF
 EOF
 )
 echo $PAYLOAD
-curl -H "Content-Type: application/json" -H "Authorization: Api-Token ${DT_TOKEN}" -X POST -d "${PAYLOAD}" ${DT_URL}/api/v1/synthetic/monitors
+curl -k -H "Content-Type: application/json" -H "Authorization: Api-Token ${DT_TOKEN}" -X POST -d "${PAYLOAD}" ${DT_URL}/api/v1/synthetic/monitors
