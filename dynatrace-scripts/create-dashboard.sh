@@ -490,7 +490,7 @@ PAYLOAD=$(cat <<EOF
                 "type": "SINGLE_VALUE",
                 "series": [{
                     "metric": "builtin:service.dbconnections.failureRate",
-                    "aggregation": "AVG",
+                    "aggregation": "NONE",
                     "type": "LINE",
                     "entityType": "SERVICE",
                     "dimensions": [{
